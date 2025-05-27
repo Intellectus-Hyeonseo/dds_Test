@@ -1,0 +1,7 @@
+# ninja log v5
+7	6775	1748322780862380053	CMakeFiles/dds_test.dir/subscriber.cpp.o	e3984d8eee4da3d
+1	8140	1748321503089633988	CMakeFiles/dds_test.dir/publisher.cpp.o	f363a0565ed9a697
+2	5334	1748321500286461585	CMakeFiles/dds_test.dir/headers/dds_TestTypeObjectSupport.cxx.o	bcdb80328e940e1d
+2	3437	1748321498389903805	CMakeFiles/dds_test.dir/headers/dds_TestPubSubTypes.cxx.o	dd6a1d792e1ecf52
+0	103	1748322911059233005	build.ninja	4aa4ad80fcbdac7e
+3	2015	1748322913059132174	dds_test	1201b141bfd58618
