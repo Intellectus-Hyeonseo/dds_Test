@@ -1,7 +1,0 @@
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/dds_test.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/edit_cache.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/rebuild_cache.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/list_install_components.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/install.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/install/local.dir
-/home/int2-mw/STK/dds_Test/build/CMakeFiles/install/strip.dir
