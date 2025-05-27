@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.intellectus.com" >
+    <participant profile_name="camera_msg_participant_profile" is_default_profile="true">
+        <domainId>5</domainId>
+        <rtps>
+            <name>camera_msg_participant</name>
+        </rtps>
+    </participant>
+    <data_writer profile_name="camera_msg_datawriter_profile" is_default_profile="true">
+        <qos>
+            <durability>
+                <kind>VOLATILE</kind>
+            </durability>
+            <reliability>
+                <kind>RELIABLE</kind>
+            </reliability>
+        </qos>
+        <topic>
+            <historyQos>
+                <kind>KEEP_LAST</kind>
+                <depth>10</depth>
+            </historyQos>
+            <resourceLimitsQos>
+                <max_samples>3</max_samples>
+                <max_instances>1</max_instances>
+                <max_samples_per_instance>1</max_samples_per_instance>
+            </resourceLimitsQos>
+        </topic>
+    </data_writer>
+
+    <data_reader profile_name="camera_msg_datareader_profile" is_default_profile="true">
+        <qos>
+            <durability>
+                <kind>VOLATILE</kind>
+            </durability>
+            <reliability>
+                <kind>RELIABLE</kind>
+            </reliability>
+        </qos>
+        <topic>
+            <historyQos>
+                <kind>KEEP_LAST</kind>
+                <depth>10</depth>
+            </historyQos>
+            <resourceLimitsQos>
+                <max_samples>3</max_samples>
+                <max_instances>1</max_instances>
+                <max_samples_per_instance>1</max_samples_per_instance>
+            </resourceLimitsQos>
+        </topic>
+    </data_reader>
+</profiles>
