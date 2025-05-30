@@ -25,6 +25,13 @@ if(NOT int2dds_FOUND)
     find_package(int2dds 3 REQUIRED)
 endif()
 
+include_directories(
+    ~/matplotlib-cpp
+    /usr/include/python3.10
+)
+
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+
 set(OpenCV_DIR "C:/opencv/build") 
 find_package(OpenCV REQUIRED)
 
@@ -70,7 +77,7 @@ target_compile_definitions(dds_test PRIVATE
     $<$<BOOL:${SHM_TRANSPORT_DEFAULT}>:SHM_TRANSPORT_BUILTIN> # Enable SHM as built-in transport
 )
 target_include_directories(dds_test PRIVATE ${OpenCV_INCLUDE_DIRS})
-target_link_libraries(dds_test PRIVATE int2dds int2cdr ${OpenCV_LIBS})
+target_link_libraries(dds_test PRIVATE int2dds int2cdr ${OpenCV_LIBS} ${Python3_LIBRARIES})
 
 install(TARGETS dds_test
     RUNTIME DESTINATION ${DATA_INSTALL_DIR}/int2dds/examples/cpp/dds_test/${BIN_INSTALL_DIR})
