@@ -59,6 +59,7 @@ int main()
         Image image;
         image.frame_index(index++);
         image.format("jpeg");
+        image.size(static_cast<uint32_t>(buffer.size()));
         image.frame().assign(buffer.begin(), buffer.end());
 
         writer->write(&image);
